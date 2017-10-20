@@ -10,59 +10,76 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2452,         80]
-NotebookOptionsPosition[      2189,         66]
-NotebookOutlinePosition[      2554,         82]
-CellTagsIndexPosition[      2511,         79]
+NotebookDataLength[      3293,        100]
+NotebookOptionsPosition[      2960,         83]
+NotebookOutlinePosition[      3325,         99]
+CellTagsIndexPosition[      3282,         96]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"digits", "=", 
+  RowBox[{"liczby", "=", 
    RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"counter", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"licznik", "=", "0"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"comb", "=", "0"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"range", "=", "10001"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"kombinacje", "=", "0"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Do", "[", 
   RowBox[{
-   RowBox[{"AppendTo", "[", 
-    RowBox[{"digits", ",", 
-     RowBox[{"RandomInteger", "[", "9", "]"}]}], "]"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "1", ",", "range", ",", "1"}], "}"}]}], 
-  "]"}], "\[IndentingNewLine]", 
- RowBox[{"Do", "[", "\[IndentingNewLine]", 
-  RowBox[{
    RowBox[{
-    RowBox[{"a", "=", " ", 
-     RowBox[{"digits", "[", 
-      RowBox[{"[", "n", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"AppendTo", "[", 
+      RowBox[{"liczby", ",", 
+       RowBox[{"RandomInteger", "[", "9", "]"}]}], "]"}], " ", "&"}], "/@", 
+    RowBox[{"Range", "[", "10001", "]"}]}], ",", "1"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "<", "10001"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"If", " ", "[", 
      RowBox[{
-      RowBox[{"n", "\[NotEqual]", "range"}], ",", 
-      RowBox[{"b", "=", 
-       RowBox[{"digits", "[", 
+      RowBox[{"i", "\[NotEqual]", "10001"}], ",", 
+      RowBox[{"liczby2", "=", 
+       RowBox[{"liczby", "[", 
         RowBox[{"[", 
-         RowBox[{"n", "+", "1"}], "]"}], "]"}]}], ",", 
-      RowBox[{"b", "=", "0"}]}], "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"i", "+", "1"}], "]"}], "]"}]}], ",", 
+      RowBox[{"liczby2", "=", "0"}]}], "]"}], ";", "\[IndentingNewLine]", 
     RowBox[{"If", "[", 
      RowBox[{
-      RowBox[{"a", "<", "b"}], ",", 
-      RowBox[{"counter", "+=", "1"}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"liczby", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], "<", "liczby2"}], ",", 
+      RowBox[{"licznik", "+=", "1"}]}], "]"}], ";", "\[IndentingNewLine]", 
     RowBox[{"If", "[", 
      RowBox[{
-      RowBox[{"counter", "\[Equal]", "100"}], ",", 
-      RowBox[{"comb", "+=", "1"}]}], "]"}]}], ",", "\[IndentingNewLine]", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "1", ",", "range", ",", "1"}], "}"}]}], 
+      RowBox[{"licznik", "\[Equal]", "100"}], ",", 
+      RowBox[{"kombinacje", "+=", "1"}]}], "]"}]}]}], "\[IndentingNewLine]", 
   "]"}], "\[IndentingNewLine]", 
- RowBox[{"Print", "[", "comb", "]"}]}], "Input",
- CellChangeTimes->{{3.717511401126872*^9, 3.7175114143576956`*^9}}]
+ RowBox[{"Print", "[", "kombinacje", "]"}]}], "Input",
+ CellChangeTimes->{{3.717511401126872*^9, 3.7175114143576956`*^9}, {
+  3.7175221262165594`*^9, 3.717522193712925*^9}, {3.7175223763451815`*^9, 
+  3.717522435046485*^9}, {3.7175224663753405`*^9, 3.717522475271356*^9}, {
+  3.7175225059606104`*^9, 3.717522572643426*^9}, {3.7175226479099584`*^9, 
+  3.717522666308391*^9}, {3.717522697019491*^9, 3.7175226977526927`*^9}, {
+  3.717522777642022*^9, 3.7175228244509068`*^9}, {3.7175228635309753`*^9, 
+  3.717522863952176*^9}, {3.7175229201797056`*^9, 3.7175229916830325`*^9}}],
+
+Cell[BoxData[""], "Print",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.717522478750162*^9, 3.717522574078628*^9, 3.7175226693815966`*^9, {
+   3.717522700888298*^9, 3.717522705726307*^9}, {3.717522829973316*^9, 
+   3.717522834310124*^9}, 3.71752286615178*^9, {3.7175229780778084`*^9, 
+   3.717523020372121*^9}}]
+}, Open  ]]
 },
 WindowSize->{942, 962},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -81,7 +98,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1627, 44, 512, "Input"]
+Cell[CellGroupData[{
+Cell[580, 22, 2021, 49, 454, "Input"],
+Cell[2604, 73, 340, 7, 34, "Print"]
+}, Open  ]]
 }
 ]
 *)
