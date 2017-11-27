@@ -1,0 +1,177 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6437,        169]
+NotebookOptionsPosition[      5994,        150]
+NotebookOutlinePosition[      6370,        166]
+CellTagsIndexPosition[      6327,        163]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"obuch", ":=", 
+  RowBox[{"Cuboid", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "4"}], ",", 
+       RowBox[{
+        RowBox[{"-", "3"}], "/", "5"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "/", "4"}], ",", 
+       RowBox[{"1", "/", "2"}], ",", "4"}], "}"}]}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"trzonek", ":=", 
+  RowBox[{"Cylinder", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "4.1"}], "}"}]}], "}"}], ",", 
+    RowBox[{"1", "/", "5"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ostrze", ":=", 
+   RowBox[{"Prism", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", 
+        RowBox[{"3", "/", "2"}], ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "/", "4"}], ",", 
+        RowBox[{"1", "/", "2"}], ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "1"}], "/", "4"}], ",", 
+        RowBox[{"1", "/", "2"}], ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", 
+        RowBox[{"3", "/", "2"}], ",", "4"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "/", "4"}], ",", 
+        RowBox[{"1", "/", "2"}], ",", "4"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "1"}], "/", "4"}], ",", 
+        RowBox[{"1", "/", "2"}], ",", "4"}], "}"}]}], "}"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Show", "[", 
+   RowBox[{
+    RowBox[{"Graphics3D", "[", 
+     RowBox[{"{", 
+      RowBox[{"Brown", ",", "trzonek"}], "}"}], "]"}], ",", 
+    RowBox[{"Graphics3D", "[", 
+     RowBox[{"{", 
+      RowBox[{"Black", ",", "obuch"}], "}"}], "]"}], ",", " ", 
+    RowBox[{"Graphics3D", "[", 
+     RowBox[{"{", " ", 
+      RowBox[{"White", ",", "ostrze"}], "}"}], "]"}]}], "]"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.720588200243266*^9, 3.720588200243266*^9}, {
+   3.7205882838264203`*^9, 3.7205882840916204`*^9}, {3.720588330125078*^9, 
+   3.720588510484475*^9}, {3.720588548382343*^9, 3.720588575229796*^9}, {
+   3.720588611389889*^9, 3.7205886534357643`*^9}, {3.720588683817627*^9, 
+   3.720588824584572*^9}, {3.720588894148896*^9, 3.7205889456049886`*^9}, {
+   3.7205890035830917`*^9, 3.7205892235136876`*^9}, {3.7205893521016645`*^9, 
+   3.72058940673187*^9}, {3.720589442580725*^9, 3.720589470518775*^9}, {
+   3.720589579357261*^9, 3.720589876051603*^9}, {3.720589924790267*^9, 
+   3.7205899493333426`*^9}, {3.7205900165964622`*^9, 3.720590052695327*^9}, {
+   3.720590131274126*^9, 3.7205901355761642`*^9}, {3.7205901717666287`*^9, 
+   3.720590171938229*^9}, {3.7205902088483186`*^9, 3.7205902140119276`*^9}, {
+   3.720590248330389*^9, 3.7205904254971323`*^9}, {3.7205905197709813`*^9, 
+   3.7205905966359186`*^9}, {3.7205906410071983`*^9, 3.720590677685263*^9}, {
+   3.720590842271907*^9, 3.7205909704781666`*^9}, {3.720591028972511*^9, 
+   3.720591255881979*^9}, {3.720591452416105*^9, 3.7205914656821284`*^9}, {
+   3.7205915396528764`*^9, 3.7205916785203586`*^9}, {3.7205917093872137`*^9, 
+   3.720591714987623*^9}, {3.7205917637095213`*^9, 3.7205917764723434`*^9}, 
+   3.7205918430063972`*^9, {3.720591879321464*^9, 3.7205919152401586`*^9}, {
+   3.7205922817164564`*^9, 3.720592330920344*^9}, {3.7205925737220993`*^9, 
+   3.720592580229311*^9}, {3.720592640837818*^9, 3.7205926695375195`*^9}, {
+   3.7205927458886285`*^9, 3.720592806667137*^9}, {3.72059291642343*^9, 
+   3.720593083561892*^9}, {3.720593167947483*^9, 3.7205931693690863`*^9}, {
+   3.7205932022991447`*^9, 3.7205932152063675`*^9}, 3.720593267624481*^9, {
+   3.720593310155557*^9, 3.720593325685585*^9}, {3.7205934129011173`*^9, 
+   3.7205934511132355`*^9}, 3.720593575809309*^9}],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[0.6, 0.4, 0.2], 
+    CylinderBox[{{0, 0, 0}, {0, 0, 4.1}}, NCache[Rational[1, 5], 0.2]]}, 
+   {GrayLevel[0], 
+    CuboidBox[
+     NCache[{{Rational[-1, 4], Rational[-3, 5], 3}, {
+       Rational[1, 4], Rational[1, 2], 4}}, {{-0.25, -0.6, 3}, {
+       0.25, 0.5, 4}}]]}, 
+   {GrayLevel[1], 
+    PrismBox[NCache[{{0, Rational[3, 2], 3}, {
+       Rational[1, 4], Rational[1, 2], 3}, {
+       Rational[-1, 4], Rational[1, 2], 3}, {0, Rational[3, 2], 4}, {
+       Rational[1, 4], Rational[1, 2], 4}, {
+       Rational[-1, 4], Rational[1, 2], 4}}, {{0, 1.5, 3}, {
+       0.25, 0.5, 3}, {-0.25, 0.5, 3}, {0, 1.5, 4}, {
+       0.25, 0.5, 4}, {-0.25, 0.5, 4}}]]}},
+  ImageSize->{365.1744204618366, 508.7134830559011},
+  ViewPoint->{2.729008876659892, -0.8231520847656015, 1.8234393865597938`},
+  ViewVertical->{0.39773795322829897`, -0.11779232558131243`, 
+   0.9969991333058782}]], "Output",
+ CellChangeTimes->{{3.7205932097599583`*^9, 3.7205932166279707`*^9}, 
+   3.720593312793962*^9, {3.7205934425405703`*^9, 3.720593452236438*^9}, 
+   3.7205935782036133`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7205901894792833`*^9, 3.7205901894792833`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.720590177602841*^9, 3.7205901935548906`*^9}}]
+},
+WindowSize->{942, 962},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+Magnification:>1.05 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4100, 94, 329, "Input"],
+Cell[4683, 118, 1099, 23, 549, "Output"]
+}, Open  ]],
+Cell[5797, 144, 96, 1, 32, InheritFromParent],
+Cell[5896, 147, 94, 1, 32, InheritFromParent]
+}
+]
+*)
+
