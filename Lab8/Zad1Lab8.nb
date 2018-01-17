@@ -1,0 +1,203 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8084,        195]
+NotebookOptionsPosition[      7656,        176]
+NotebookOutlinePosition[      8001,        191]
+CellTagsIndexPosition[      7958,        188]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"women", ":=", 
+  RowBox[{"ColorSeparate", "[", 
+   RowBox[{"ExampleData", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<TestImage\>\"", ",", "\"\<Lena\>\""}], "}"}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ColorCombine", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"ImageAdjust", "[", 
+        RowBox[{
+         RowBox[{"women", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x1", ",", " ", "y1", ",", " ", "z1"}], "}"}]}], "]"}], ",",
+        "\[IndentingNewLine]", 
+       RowBox[{"ImageAdjust", "[", 
+        RowBox[{
+         RowBox[{"women", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x2", ",", " ", "y2", ",", " ", "z2"}], "}"}]}], "]"}], ",",
+        "\[IndentingNewLine]", 
+       RowBox[{"ImageAdjust", "[", 
+        RowBox[{
+         RowBox[{"women", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x3", ",", " ", "y3", ",", " ", "z3"}], "}"}]}], "]"}]}], 
+      "}"}], ",", "\[IndentingNewLine]", "\"\<RGB\>\""}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x1", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y1", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z1", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x2", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y2", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z2", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x3", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y3", ",", "0.1", ",", "1", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z3", ",", "0.1", ",", "1", ",", "0.1"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.724824414064228*^9, 3.7248244454312677`*^9}, {
+   3.7248246325125875`*^9, 3.7248246856545844`*^9}, 3.724824777680928*^9, {
+   3.724825719871258*^9, 3.7248257208929834`*^9}, {3.725036605354826*^9, 
+   3.725036605941851*^9}, 3.7250377499106236`*^9, {3.725038022976366*^9, 
+   3.725038052634695*^9}, {3.725038433794351*^9, 3.7250384406387715`*^9}, {
+   3.7250384710478764`*^9, 3.725038471872079*^9}, {3.72503853204362*^9, 
+   3.7250385328124228`*^9}, {3.725038637775168*^9, 3.7250386505692596`*^9}, {
+   3.725038861064588*^9, 3.725038890608278*^9}, {3.725038962374852*^9, 
+   3.725039029874258*^9}, {3.725039086652711*^9, 3.7250391628903737`*^9}, {
+   3.7250392684760675`*^9, 3.7250393046546526`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x1$$ = 
+    0.30000000000000004`, $CellContext`x2$$ = 0.1, $CellContext`x3$$ = 
+    0.8, $CellContext`y1$$ = 1., $CellContext`y2$$ = 0.5, $CellContext`y3$$ = 
+    0.4, $CellContext`z1$$ = 0.2, $CellContext`z2$$ = 
+    0.7000000000000001, $CellContext`z3$$ = 0.5, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x1$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`y1$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`z1$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`x2$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`y2$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`z2$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`x3$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`y3$$], 0.1, 1, 0.1}, {
+      Hold[$CellContext`z3$$], 0.1, 1, 0.1}}, Typeset`size$$ = {
+    454., {224., 230.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`x1$18637$$ = 
+    0, $CellContext`y1$18638$$ = 0, $CellContext`z1$18639$$ = 
+    0, $CellContext`x2$18640$$ = 0, $CellContext`y2$18641$$ = 
+    0, $CellContext`z2$18642$$ = 0, $CellContext`x3$18643$$ = 
+    0, $CellContext`y3$18644$$ = 0, $CellContext`z3$18645$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`x1$$ = 0.1, $CellContext`x2$$ = 
+        0.1, $CellContext`x3$$ = 0.1, $CellContext`y1$$ = 
+        0.1, $CellContext`y2$$ = 0.1, $CellContext`y3$$ = 
+        0.1, $CellContext`z1$$ = 0.1, $CellContext`z2$$ = 
+        0.1, $CellContext`z3$$ = 0.1}, "ControllerVariables" :> {
+        Hold[$CellContext`x1$$, $CellContext`x1$18637$$, 0], 
+        Hold[$CellContext`y1$$, $CellContext`y1$18638$$, 0], 
+        Hold[$CellContext`z1$$, $CellContext`z1$18639$$, 0], 
+        Hold[$CellContext`x2$$, $CellContext`x2$18640$$, 0], 
+        Hold[$CellContext`y2$$, $CellContext`y2$18641$$, 0], 
+        Hold[$CellContext`z2$$, $CellContext`z2$18642$$, 0], 
+        Hold[$CellContext`x3$$, $CellContext`x3$18643$$, 0], 
+        Hold[$CellContext`y3$$, $CellContext`y3$18644$$, 0], 
+        Hold[$CellContext`z3$$, $CellContext`z3$18645$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ColorCombine[{
+         ImageAdjust[
+          
+          Part[$CellContext`women, 
+           1], {$CellContext`x1$$, $CellContext`y1$$, $CellContext`z1$$}], 
+         ImageAdjust[
+          
+          Part[$CellContext`women, 
+           2], {$CellContext`x2$$, $CellContext`y2$$, $CellContext`z2$$}], 
+         ImageAdjust[
+          
+          Part[$CellContext`women, 
+           3], {$CellContext`x3$$, $CellContext`y3$$, $CellContext`z3$$}]}, 
+        "RGB"], "Specifications" :> {{$CellContext`x1$$, 0.1, 1, 
+         0.1}, {$CellContext`y1$$, 0.1, 1, 0.1}, {$CellContext`z1$$, 0.1, 1, 
+         0.1}, {$CellContext`x2$$, 0.1, 1, 0.1}, {$CellContext`y2$$, 0.1, 1, 
+         0.1}, {$CellContext`z2$$, 0.1, 1, 0.1}, {$CellContext`x3$$, 0.1, 1, 
+         0.1}, {$CellContext`y3$$, 0.1, 1, 0.1}, {$CellContext`z3$$, 0.1, 1, 
+         0.1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{745., {284., 291.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.725038566053815*^9, 3.7250388809547253`*^9, {3.7250391089797926`*^9, 
+   3.7250391643647895`*^9}, {3.725039280325713*^9, 3.725039305863657*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7250357983456593`*^9, 3.725035800222685*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.724824702960883*^9, 3.7248247054746428`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7248246729633*^9, 3.7248246769251127`*^9}}]
+},
+WindowSize->{871, 767},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2705, 62, 235, "Input"],
+Cell[3288, 86, 4063, 78, 592, "Output"]
+}, Open  ]],
+Cell[7366, 167, 94, 1, 30, "Input"],
+Cell[7463, 170, 94, 1, 30, "Input"],
+Cell[7560, 173, 92, 1, 30, "Input"]
+}
+]
+*)
+

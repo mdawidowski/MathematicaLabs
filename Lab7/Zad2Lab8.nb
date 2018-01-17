@@ -1,0 +1,179 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7058,        171]
+NotebookOptionsPosition[      6704,        154]
+NotebookOutlinePosition[      7049,        169]
+CellTagsIndexPosition[      7006,        166]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DynamicModule", "[", 
+   RowBox[{
+    RowBox[{"{", "graph", "}"}], ",", 
+    RowBox[{"Dynamic", "[", "graph", "]"}], ",", 
+    RowBox[{"Initialization", "\[RuleDelayed]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"graph", "=", 
+        RowBox[{"Graph", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "\[UndirectedEdge]", "3"}], ",", 
+            RowBox[{"1", "\[UndirectedEdge]", "2"}], ",", 
+            RowBox[{"1", "\[UndirectedEdge]", "4"}], ",", 
+            RowBox[{"2", "\[UndirectedEdge]", "5"}], ",", 
+            RowBox[{"2", "\[UndirectedEdge]", "6"}], ",", 
+            RowBox[{"3", "\[UndirectedEdge]", "7"}], ",", 
+            RowBox[{"3", "\[UndirectedEdge]", "8"}]}], "}"}], ",", 
+          RowBox[{"VertexLabels", "\[Rule]", "\"\<Name\>\""}], ",", 
+          RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}], ",", 
+          RowBox[{"VertexShapeFunction", "\[Rule]", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"EventHandler", "[", 
+              RowBox[{
+               RowBox[{"Disk", "[", 
+                RowBox[{"#1", ",", ".1"}], "]"}], ",", 
+               RowBox[{"\"\<MouseClicked\>\"", "\[RuleDelayed]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"If", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"VertexDegree", "[", 
+                    RowBox[{"graph", ",", "#2"}], "]"}], "==", "1"}], ",", 
+                    RowBox[{
+                    RowBox[{"graph", "=", 
+                    RowBox[{"VertexDelete", "[", 
+                    RowBox[{"graph", ",", "#2"}], "]"}]}], ";", 
+                    RowBox[{"graph", "=", 
+                    RowBox[{"EdgeAdd", "[", 
+                    RowBox[{"graph", ",", 
+                    RowBox[{
+                    RowBox[{"RandomChoice", "[", 
+                    RowBox[{"VertexList", "[", "graph", "]"}], "]"}], 
+                    "\[UndirectedEdge]", 
+                    RowBox[{"RandomChoice", "[", 
+                    RowBox[{"VertexList", "[", "graph", "]"}], "]"}]}]}], 
+                    "]"}]}]}]}], "]"}], ";"}], ")"}]}], ",", 
+               RowBox[{"Method", "\[Rule]", "\"\<Queued\>\""}]}], " ", "]"}], 
+             "&"}], ")"}]}]}], "]"}]}], ";", 
+       RowBox[{"graph", "=", 
+        RowBox[{"SetProperty", "[", 
+         RowBox[{"graph", ",", 
+          RowBox[{"VertexCoordinates", "\[Rule]", 
+           RowBox[{"GraphEmbedding", "[", "graph", "]"}]}]}], "]"}]}]}], 
+      ")"}]}]}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7224034348482704`*^9, 3.722403434849271*^9}, {
+   3.7224041148810015`*^9, 3.722404147722165*^9}, 3.722404195860629*^9, {
+   3.7224042367155695`*^9, 3.72240435308196*^9}, {3.7224049167167053`*^9, 
+   3.722404922847516*^9}, {3.722404959640786*^9, 3.7224049598279867`*^9}, {
+   3.722405004706721*^9, 3.7224050059079227`*^9}, {3.722405037944255*^9, 
+   3.722405058797892*^9}, {3.722405154827691*^9, 3.7224052222135344`*^9}, {
+   3.722405253074789*^9, 3.72240528899506*^9}, {3.722405469661972*^9, 
+   3.722405481712194*^9}, {3.7224055198934617`*^9, 3.72240561312333*^9}, {
+   3.7224057275217495`*^9, 3.722405734278561*^9}, {3.722405830602065*^9, 
+   3.7224059004230127`*^9}, 3.7224059721630297`*^9, {3.7224061513362837`*^9, 
+   3.7224061981599665`*^9}, {3.7224062628946323`*^9, 3.722406265577837*^9}, {
+   3.7224062984112597`*^9, 3.722406312668784*^9}, {3.7224063940611067`*^9, 
+   3.722406460438419*^9}, {3.722406533938377*^9, 3.7224065943621416`*^9}, {
+   3.7224066604768977`*^9, 3.722406691463182*^9}, {3.722406881010664*^9, 
+   3.7224068830230675`*^9}, 3.72240693453663*^9, {3.7224071377624893`*^9, 
+   3.7224071497601395`*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`graph$$ = 
+  Graph[{1, 3, 2, 5}, {
+   Null, {{1, 2}, {1, 3}, {3, 4}, {1, 4}, {4, 3}, {2, 2}, {2, 4}}}, {
+   PerformanceGoal -> "Quality", 
+    VertexCoordinates -> {{1.4819171472698969`, 1.4819171472698969`}, {
+     0.3704792868174742, 0.7409585736349484}, {1.852396434087371, 
+     0.7409585736349484}, {1.4819171472698969`, 0.}}, 
+    VertexLabels -> {"Name", 6 -> None, 4 -> None, 7 -> None, 8 -> None}, 
+    VertexShapeFunction -> {EventHandler[
+       Disk[#, 0.1], 
+       "MouseClicked" :> (
+        If[VertexDegree[$CellContext`graph$$, #2] == 
+          1, $CellContext`graph$$ = 
+           VertexDelete[$CellContext`graph$$, #2]; $CellContext`graph$$ = 
+           EdgeAdd[$CellContext`graph$$, 
+             UndirectedEdge[
+              RandomChoice[
+               VertexList[$CellContext`graph$$]], 
+              RandomChoice[
+               VertexList[$CellContext`graph$$]]]]]; Null), Method -> 
+       "Queued"]& , 8 -> Automatic, 4 -> Automatic, 7 -> Automatic, 6 -> 
+      Automatic}}]}, 
+  DynamicBox[ToBoxes[$CellContext`graph$$, StandardForm],
+   ImageSizeCache->{360., {177., 182.}}],
+  DynamicModuleValues:>{},
+  Initialization:>($CellContext`graph$$ = Graph[{
+       UndirectedEdge[1, 3], 
+       UndirectedEdge[1, 2], 
+       UndirectedEdge[1, 4], 
+       UndirectedEdge[2, 5], 
+       UndirectedEdge[2, 6], 
+       UndirectedEdge[3, 7], 
+       UndirectedEdge[3, 8]}, VertexLabels -> "Name", PerformanceGoal -> 
+      "Quality", VertexShapeFunction -> (EventHandler[
+        Disk[#, 0.1], 
+        "MouseClicked" :> (
+         If[VertexDegree[$CellContext`graph$$, #2] == 
+           1, $CellContext`graph$$ = 
+            VertexDelete[$CellContext`graph$$, #2]; $CellContext`graph$$ = 
+            EdgeAdd[$CellContext`graph$$, 
+              UndirectedEdge[
+               RandomChoice[
+                VertexList[$CellContext`graph$$]], 
+               RandomChoice[
+                VertexList[$CellContext`graph$$]]]]]; Null), Method -> 
+        "Queued"]& )]; $CellContext`graph$$ = 
+    SetProperty[$CellContext`graph$$, VertexCoordinates -> 
+      GraphEmbedding[$CellContext`graph$$]])]], "Output",
+ CellChangeTimes->{3.7250322746798677`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.722407424365402*^9, 3.722407426743538*^9}}]
+},
+WindowSize->{942, 962},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3785, 75, 364, "Input"],
+Cell[4368, 99, 2225, 49, 374, "Output"]
+}, Open  ]],
+Cell[6608, 151, 92, 1, 30, "Input"]
+}
+]
+*)
+
