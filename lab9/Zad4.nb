@@ -1,0 +1,86 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2586,         78]
+NotebookOptionsPosition[      2231,         61]
+NotebookOutlinePosition[      2579,         76]
+CellTagsIndexPosition[      2536,         73]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"i", ":=", 
+  RowBox[{"{", 
+   RowBox[{
+   "60", ",", "61", ",", "62", ",", "63", ",", "64", ",", "65", ",", "66", 
+    ",", "67", ",", "68", ",", "69"}], "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Parallelize", "[", "\[IndentingNewLine]", 
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"n", "=", "1"}], ",", 
+    RowBox[{"n", "\[LessEqual]", "10"}], ",", 
+    RowBox[{"n", "++"}], ",", " ", 
+    RowBox[{"Count", "[", " ", 
+     RowBox[{"Divisors", "[", 
+      RowBox[{
+       RowBox[{"i", "!"}], "-", "1"}], "]"}], "]"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.725423650368783*^9, 3.7254236633967056`*^9}, {
+  3.7254237728707657`*^9, 3.7254237999698763`*^9}, {3.7254239824114103`*^9, 
+  3.725424013438266*^9}, {3.725424102816651*^9, 3.725424158557046*^9}, {
+  3.7254241939089794`*^9, 3.7254242603404703`*^9}, {3.7254252509728146`*^9, 
+  3.7254252753244576`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Parallelize","nopar1",
+   "\"\\!\\(\\*RowBox[{\\\"For\\\", \\\"[\\\", RowBox[{RowBox[{\\\"n\\\", \
+\\\"=\\\", \\\"1\\\"}], \\\",\\\", RowBox[{\\\"n\\\", \\\"\[LessEqual]\\\", \
+\\\"10\\\"}], \\\",\\\", RowBox[{\\\"n\\\", \\\"++\\\"}], \\\",\\\", RowBox[{\
+\\\"Count\\\", \\\"[\\\", RowBox[{\\\"Divisors\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"i\\\", \\\"!\\\"}], \\\"-\\\", \\\"1\\\"}], \\\"]\\\"}], \
+\\\"]\\\"}]}], \\\"]\\\"}]\\) cannot be parallelized; proceeding with \
+sequential evaluation.\"",2,5,3,17570859693614666506,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7254252921813197`*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.7254253723678975`*^9}]
+}, Open  ]]
+},
+WindowSize->{944, 733},
+WindowMargins->{{Automatic, 178}, {18, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 899, 20, 103, "Input"],
+Cell[1482, 44, 651, 11, 21, "Message"],
+Cell[2136, 57, 79, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
